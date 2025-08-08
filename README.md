@@ -1,1 +1,1 @@
-I make random code for simple problems
+This is a collection of my random coding projects
