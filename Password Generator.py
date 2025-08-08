@@ -1,7 +1,7 @@
 ################################################################################
 #
 #
-#   Programer: SomethingBoxed
+#   Programmer: RenRose
 #   Date created: 05/05/2024
 #
 ################################################################################
@@ -40,3 +40,4 @@ if password3 == "":
     password3 = split_and_swap(password3)
 
 print("Password is:", password3 + password1 + password2)
+
