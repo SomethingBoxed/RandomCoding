@@ -48,6 +48,7 @@ def newfile():
             file_content2 = input("Type what you want to add to your text file: ")
             file.write(file_content2)
             extra = input("Do you want to go to the next line(y/n): ")
+        file.close
     print("Processing...") 
     time.sleep(0.7)
     print("Done!")
@@ -57,4 +58,5 @@ def newfile():
         extra = input("Invalid, do you want to make a new file?(y/n): ")
     while extra == "y":
         newfile()
+
 newfile()
