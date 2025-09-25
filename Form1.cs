@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,9 +6,11 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using textfile_generator.Properties;
 
 namespace textfile_generator
@@ -46,6 +48,14 @@ namespace textfile_generator
 
         private void normal_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void load_bt_Click(object sender, EventArgs e)
+        {
+            string fname = file_name.Text;
+            string in_file = File.ReadAllText(fname + ".txt");
+            file_content.Text = in_file;
 
         }
     }
